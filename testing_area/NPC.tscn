@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmik2nw5ts56e"]
+
+[ext_resource type="Script" uid="uid://cmlk8el5jlyx8" path="res://Dialogue_System/npc.gd" id="1_faohc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_faohc"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hjaro"]
+
+[node name="Npc" type="CharacterBody3D"]
+script = ExtResource("1_faohc")
+DialogueKey = "001_Liam"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_faohc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_hjaro")

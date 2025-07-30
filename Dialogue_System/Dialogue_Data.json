@@ -1,0 +1,27 @@
+{
+	"001_Liam" : {
+		"name" : "Liam",
+		"text0" : "Ready to head out?",
+		"text1" : "We've got to get going soon.",
+		"choice" : {
+			"0": {
+				"choice_text": "yes",
+				"output": "001_Liam_start",
+			},
+			"1": {
+				"choice_text": "not yet",
+				"output": "001_Liam_delay",
+			}
+		}
+	},
+	"001_Liam_start" : {
+		"text0" : "Great! let's get going then!",
+	},
+	"001_Liam_delay" : {
+		"text0" : "Ok, don't keep me waiting too long..."
+	},
+	
+	
+
+
+}
