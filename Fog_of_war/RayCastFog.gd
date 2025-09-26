@@ -1,6 +1,13 @@
 extends MeshInstance3D
 class_name vision_calculator
 
+#this class generates a procedural mesh around and in front of the player
+#this mesh is then viewed by a SubViewport to generate a mask texture every frame
+#this mask is then passed to a canvas item shader, that darkens the screen with exception to the masked area
+#the mesh's collision data can also be used to determine if a enemy should be visible or not
+
+
+
 @export var vision_radius : float = 10.0
 @export var vision_fov : int = 90
 @export var number_of_rays : int = 180
